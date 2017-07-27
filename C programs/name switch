@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main (void)
+{
+    char string1[20];                                 /* An array to hold 19 characters */
+    char string2[20];                                 /* An array to hold 19 characters */
+    char line[100];                                   /* Set up an array of characters to hold the user input */
+    printf("Enter your first then last name>\n");  /* Prompt user to enter their first and last name*/
+    fgets(line, sizeof(line), stdin);                 /* Get the user input */
+    sscanf(line, "%s %s", string1, string2);          /* Process the user input */
+    printf("%s, %s", string2, string1);               /* Print out the output */
+    return 0;
+}

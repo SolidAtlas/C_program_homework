@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main(void)
+{
+    float value, output;
+    char operator;
+
+    printf("Please enter a value and operator to begin\n");
+    scanf("%f %c", &value, &operator);
+
+    while (operator != 'e' || operator != 'E')
+    {
+        switch(operator)
+        {
+            case 'S':
+            case 's':
+                output = value;
+                break;
+
+            case '+':
+                output += value;
+                break;
+
+            case'-':
+                output -= value;
+                break;
+
+            case '*':
+                output *= value;
+                break;
+
+            case '/':
+                if (value == 0)
+                {
+                    printf("Division by zero\n");
+                }
+                else
+                {
+                    output /= value;
+                }
+                break;
+
+            case 'E':
+            case 'e':
+                output += value;
+                printf("= %.3f\n", output);
+                return 0;
+
+            default:
+                printf("Unidentified operator\n");
+                return 0;
+        }
+        printf("= %.3f\n", output);
+        scanf("%f %c", &value, &operator);
+    }
+
+    return 0;
+}

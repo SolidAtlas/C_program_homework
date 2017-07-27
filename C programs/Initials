@@ -1,0 +1,47 @@
+
+
+/* Program:  My Initials
+   Author:   Justin Garcia
+*/
+
+#include <stdio.h>
+
+void printJ (void)
+{
+ printf ("jjjjjjjjjjjjj\n");
+        printf ("       j\n");
+        printf ("       j\n");
+        printf ("       j\n");
+        printf ("j      j\n");
+        printf (" j     j\n");
+        printf (" jjjjjjj\n");
+}
+void printG (void)
+{
+ printf ("   G G\n");
+        printf (" G     G\n");
+        printf ("G\n");
+        printf ("G     G G G\n");
+        printf ("G     G   G\n");
+        printf (" G       G\n");
+        printf ("   G G G\n"); 
+}
+int main( void )
+{
+   int j_g = 0; 
+
+    printf ("Select order of initials by inputing 1 or 0. By inputing 1, the initials will be JG.\nBy inputing 0, the initials will be GJ.\n");
+    scanf ("%d", &j_g);
+    
+    if (j_g==0)
+    {
+      printG(); printJ();
+    }
+    else
+    {
+       printJ(); printG();       
+    }
+    
+    return 0;
+
+}

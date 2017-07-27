@@ -1,0 +1,43 @@
+// Program for a "Printing" Calculator
+ 
+ 
+#include <stdio.h>
+ 
+ 
+int main (void)
+{
+    int value, total;
+    char operator;
+ 
+ 
+    printf ("Begin Calculations by Entering a Value and an Operator\n");
+ 
+ 
+    while ( operator != 'E' && 'e' )
+    {
+        scanf ("%i %c", &value, &operator);
+        if ( operator == 'S' || 's' )
+            printf ("= %i\n", total = value);
+        else if ( operator == 'E' || 'e' )
+            printf ("Your total is: %i\n", total = total);
+        else if ( operator == '+' )
+            printf ("= %i\n", total = value + total );
+        else if ( operator == '-' )
+            printf ("= %i\n", total = value - total);
+        else if ( operator == '*' )
+            printf ("= %i\n", total = value * total);
+        else if ( operator == '/' )
+            if ( value == 0 )
+                printf ("Division by zero.\n");
+            else
+                printf ("= %i\n", total = value / total);
+        else
+            printf ("Unknown Operator.\n");
+    }
+        printf ("End of Calculations.\n");
+ 
+ 
+ 
+ 
+    return 0;
+}
