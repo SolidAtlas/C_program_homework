@@ -8,7 +8,7 @@
 
 void printJ (void)
 {
- printf ("jjjjjjjjjjjjj\n");
+        printf ("jjjjjjjjjjjjj\n");
         printf ("       j\n");
         printf ("       j\n");
         printf ("       j\n");
@@ -18,7 +18,7 @@ void printJ (void)
 }
 void printG (void)
 {
- printf ("   G G\n");
+        printf ("   G G\n");
         printf (" G     G\n");
         printf ("G\n");
         printf ("G     G G G\n");
